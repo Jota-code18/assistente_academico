@@ -1,0 +1,33 @@
+6<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - UN!A</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="top-bar">
+        <h2>Início</h2>
+    </header>
+
+    <main class="container">
+        <div class="info">
+            <p><strong>Aluno =</strong> Henrique Lima</p>
+            <p><strong>Curso =</strong> Inteligência Artificial</p>
+            <p><strong>Período =</strong> 1°</p>
+        </div>
+
+        <div class="card">
+            <h3>15</h3>
+            <p>Faltas</p>
+        </div>
+
+        <a href="{{ url_for('assistente') }}" class="btn-green">UN!A</a>
+    </main>
+
+    <footer class="bottom-bar">
+        <p>UN!A</p>
+    </footer>
+</body>
+</html>

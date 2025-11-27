@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistente UN!A</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="top-bar">
+        <h2>Assistente UN!A</h2>
+    </header>
+
+    <main class="chat-container">
+        {% if resposta %}
+            <div class="chat-message assistente">
+                <p>{{ resposta }}</p>
+            </div>
+        {% endif %}
+    </main>
+
+    <form method="POST" class="chat-input">
+        <input type="text" name="mensagem" placeholder="Digite sua mensagem..." required>
+        <button class="btn-blue" type="submit">Enviar</button>
+    </form>
+
+    <footer class="bottom-bar">
+        <p>UN!A</p>
+    </footer>
+</body>
+</html>
